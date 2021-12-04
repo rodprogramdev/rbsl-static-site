@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, Cybersecurity">
+    <meta name="description" content="Web design and tech tutorials">
+    <meta name="author" content="Rodrigo Bonzerr S. Lopez">
+    <title>Homepage roprogramdev tutorial blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: palegoldenrod;
+        }
+
+       /* p {
+            font-weight: bold;
+        }*/
+
+        /*--------------------------HEADER STYLES-------------------------------------*/
+        .header {
+            background-color: lightblue;
+            height: 100vh;
+            position: relative;
+        }
+
+
+        .nav__list {
+            float: left;
+            list-style-type: none;
+            padding: 2% 2%;
+        }
+
+        .header__heading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        h1 {
+            font-size: 5rem;
+        }
+
+
+        /*--------------------------ABOUT STYLES---------------------------------------*/
+        .about{
+            height: 100vh;
+            text-align:center;
+            padding: 5rem;
+        }
+
+        .about__heading {
+            padding: 2rem;
+            /*background-color: red;*/
+        }
+
+   /* p {
+            background-color: green;
+        }*/
+
+        img {
+            background-color: blue;
+        }
+
+        /*--------------------------BLOG STYLES---------------------------------------*/
+        .blogPost{
+            height: 100vh;
+            background-color: green;
+            text-align: left;
+            font-size: 1rem;
+            color:#fff;
+            padding: 2rem;
+        }
+
+        aside{
+            float: right;
+            padding: 2rem;
+        }
+
+        /*--------------------------TABLE STYLES-------------------------------------*/
+        .table{
+            height: 100vh;
+        }
+
+       
+        /*--------------------------SUBSCRIBE STYLES-------------------------------------*/
+        .form{
+            background-color: pink;
+            height: 100vh;
+        }
+        /*--------------------------FOOTER STYLES-------------------------------------*/
+    </style>
+</head>
+
+<body>
+
+
+
+    <!--****************************************HEADER SECTION**********************************-->
+    <header>
+        <div class="header">
+            <div class="header__nav">
+                <nav>
+                    <ul>
+                        <li class="nav__list"><a href="#">Home</a></li>
+                        <li class="nav__list"><a href="#">About</a></li>
+                        <li class="nav__list"><a href="#">Contact</a></li>
+                        <li class="nav__list"><a href="https://twitter.com/home" target="_blank">Twitter</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__heading">
+                <h1>HTML CHEAT SHEET TEMPLATE</h1>
+                <!--<h2>Heading 2</h2>
+                <h3>Heading 3</h3>
+                <h4>Heading 4</h4>
+                <h5>Heading 5</h5>
+                <h6>Heading 6</h6>-->
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!--****************************************ABOUT SECTION**********************************-->
+    <section>
+        <div class="about">
+            <h2 class="about__heading" >ABOUT</h2>
+            <p>I am <strong>RODRIGO BONZERR S. LOPEZ</strong>, and I am a graduate of Bachelor of Commerce Major in Computer Science, and my
+                hobbies are guitar playing, video games, Filipino martial arts, mountaineering, and anything interesting to
+                learn. This is an <em>HTML cheat sheet template</em> that is a result of the <strong>HTML crash course</strong> that I've built for my
+                YouTube channel. You can customize this and use it as a guide for building your own project.</p>
+    
+            
+            <img class="about__img" src="image/02-rodprogramdev-300PPi-cidratio.jpg" width="100px" alt="THIS IS AN IMAGE">
+        </div>
+        
+    </section>
+    <!--****************************************BLOG SECTION**********************************-->
+    <section>
+        <div class="blogPost">
+            <h2>Blog Articles</h2>
+            <aside>
+                <h3>Tutorial Categories</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                    <li>CYBERSECURITY</li>
+                </ul>
+            </aside>
+            <article>
+                <h3 class="blogPost__heading">Computer talk 101</h3>
+                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F07%2FComputer-Science-Background.jpg&f=1&nofb=1" alt="Computer science image" width="100px" height="100px">
+                <blockquote cite="https://rodprogramdev.wordpress.com/">
+                    Computer literacy nowadays is an important skill to be acquired by any individual.
+                    This is due to the fact that most common tasks for different jobs in any industries will
+                    require tasks that can be achieved through the use of a computer. From sending a 
+                    simple email to creating powerpoint presentations for a captured audience.
+                </blockquote>
+                <a href="#">Continue Reading</a>
+               
+            </article>
+            <article>
+                <h3 class="blogPost__heading"><abbr title="Cisco Certified Network Associate">CCNA</abbr> - Internet of Things</h3>
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.o89uhOOmpmrdsAiHYqKCIgHaEK%26pid%3DApi&f=1" alt="Networking rj45 cable image" width="100px" height="100px">
+                <blockquote cite="https://www.rodprogramdev.wordpress.com">
+                    Hi! I'm Rodrigo Lopez and I would like to take the <abbr title="Cisco Certified Network Associate">CCNA</abbr> certification that is why
+                    I have committed to study networking on a daily basis for one hour. I will be applying
+                    a 100 day challenge of studying different Cisco Certified Network Associate concepts
+                    and I would like to document my journey through this blog.
+                  </blockquote>
+                  <a href="#">Continue Reading</a>
+            </article>
+        </div>
+    </section>
+    <!--****************************************TABLE SECTION**********************************-->
+    <section>
+        <div class="table">
+            <h2 class="table__heading">TABLE INFORMATION</h2>
+            <table>
+                <thead>
+                    <tr>
+                       <th>Workshop Title</th>
+                       <th>Target Start Date</th>
+                       <th>Target End Date</th>
+                       <th>Requirements</th>
+                       <th>Remarks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML Crash Course</td>
+                        <td>November 20, 2021</td>
+                        <td>November 24, 2021</td>
+                        <td>Ages 7 to 16 and above. A Browser & desktop or laptop device.</td>
+                        <td>Remind students about day of orientation</td>
+                    </tr>
+                    <tr>
+                        <td>Scratch Programming</td>
+                        <td>November 25, 2021</td>
+                        <td>November 30, 2021</td>
+                        <td>Age 7 to 16 and above. Install Scratch desktop or laptop</td>
+                        <td>This is going to be an introductory workshop for total beginners</td>
+                    </tr>
+                    <tr>
+                        <td>Introduction to Animation</td>
+                        <td>Dec10</td>
+                        <td>December 11</td>
+                        <td>Age 7 to 16 and above. GIMP free photo editor</td>
+                        <td>Students can use other available software for animation.</td>
+                    </tr>
+                    <tr>
+                        <td>Free English Tutorials</td>
+                        <td>December 20</td>
+                        <td>December 23</td>
+                        <td>Age 7 to 16 and above</td>
+                        <td>Free workshop as a supplement to students learning programming.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </section>
+    <!--****************************************SUBSCRIBE SECTION**********************************-->
+    <section>
+        <div class="form">
+            <h2 class="form__heading">SUBSCRIBE</h2>
+            <form action="mailto:rodprogramdev@gmail.com" method="POST">
+               <label class="form__label--name" for="userName">NAME:</label>
+               <input type="text" id="userName" placeholder="Enter your name here" >
+               <label class="form__label--email" for="email" >Email:</label>
+               <input type="email" name="email" placeholder="Enter your email here">
+               <label class="form__label--birthday" for="birthday">Birthday:</label>
+               <input type="date" name="birthday" id="birthday">
+               
+            </form>
+        </div>
+    </section>
+    <!--****************************************FOOTER SECTION**********************************-->
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
