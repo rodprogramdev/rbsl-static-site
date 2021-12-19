@@ -9,6 +9,9 @@
     <meta name="description" content="Web design and tech tutorials">
     <meta name="author" content="Rodrigo Bonzerr S. Lopez">
     <title>Homepage roprogramdev tutorial blog</title>
+    <link rel="stylesheet" href="html5-simple-date-input-polyfill.css" />
+
+<script src="html5-simple-date-input-polyfill.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -63,12 +66,20 @@
             /*background-color: red;*/
         }
 
+        
+
    /* p {
             background-color: green;
         }*/
 
         img {
             background-color: blue;
+        }
+
+        .about__img{
+            height: 15rem;
+            width: 15rem;
+
         }
 
         /*--------------------------BLOG STYLES---------------------------------------*/
@@ -79,6 +90,11 @@
             font-size: 1rem;
             color:#fff;
             padding: 2rem;
+        }
+
+        .blogPost__img--1{
+            height: 100px;
+            width:100px;
         }
 
         aside{
@@ -142,7 +158,7 @@
                 YouTube channel. You can customize this and use it as a guide for building your own project.</p>
     
             
-            <img class="about__img" src="image/02-rodprogramdev-300PPi-cidratio.jpg" width="100px" alt="THIS IS AN IMAGE">
+            <img class="about__img" src="image/02-rodprogramdev-300PPi-cidratio.jpg" alt="THIS IS AN IMAGE">
         </div>
         
     </section>
@@ -161,7 +177,7 @@
             </aside>
             <article>
                 <h3 class="blogPost__heading">Computer talk 101</h3>
-                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F07%2FComputer-Science-Background.jpg&f=1&nofb=1" alt="Computer science image" width="100px" height="100px">
+                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F07%2FComputer-Science-Background.jpg&f=1&nofb=1" alt="Computer science image" width="100" height="100">
                 <blockquote cite="https://rodprogramdev.wordpress.com/">
                     Computer literacy nowadays is an important skill to be acquired by any individual.
                     This is due to the fact that most common tasks for different jobs in any industries will
@@ -173,7 +189,7 @@
             </article>
             <article>
                 <h3 class="blogPost__heading"><abbr title="Cisco Certified Network Associate">CCNA</abbr> - Internet of Things</h3>
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.o89uhOOmpmrdsAiHYqKCIgHaEK%26pid%3DApi&f=1" alt="Networking rj45 cable image" width="100px" height="100px">
+                <img class="blogPost__img--1" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.o89uhOOmpmrdsAiHYqKCIgHaEK%26pid%3DApi&f=1" alt="Networking rj45 cable image">
                 <blockquote cite="https://www.rodprogramdev.wordpress.com">
                     Hi! I'm Rodrigo Lopez and I would like to take the <abbr title="Cisco Certified Network Associate">CCNA</abbr> certification that is why
                     I have committed to study networking on a daily basis for one hour. I will be applying
@@ -242,7 +258,7 @@
                <br>
                <br>
                <label class="form__label--email" for="email" >Email:</label>
-               <input type="email" name="email" placeholder="Enter your email here">
+               <input type="email" id="email" name="email" placeholder="Enter your email here">
                <br>
                <br>
                <label class="form__label--birthday" for="birthday">Birthday:</label>
