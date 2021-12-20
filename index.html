@@ -89,15 +89,33 @@
         /*--------------------------BLOG STYLES---------------------------------------*/
         .blogPost{
             height: 100vh;
-            background-color: green;
+            background-image: url("images/J-comp-hacker-with-laptop-golden-credit-card.jpg");
+            background-size: cover;
             text-align: left;
             font-size: 1rem;
             color:#fff;
             padding: 2rem;
         }
 
+        .blogPost__heading--1{
+            padding: 2% 2% 2% 0%;
+        }
+
+        .blogPost__heading--2{
+            padding: 0% 2% 2% 0%;
+        }
+
+
         .blogPost__img--1{
+            float: left;
+            margin-right: 2rem;
+            border-radius:50%;
             height: 100px;
+            width:100px;
+        }
+
+        .blogPost__img--2{
+            height:100px;
             width:100px;
         }
 
@@ -105,6 +123,17 @@
             float: right;
             padding: 2rem;
         }
+
+        aside ul li{
+            padding: 1rem;
+        }
+
+        blockquote{
+            display:inline-block;            
+            width: 60%;
+            padding: 0% 3%;
+        }
+
 
         /*--------------------------TABLE STYLES-------------------------------------*/
         .table{
@@ -175,20 +204,25 @@
                 </ul>
             </aside>
             <article>
-                <h3 class="blogPost__heading">Computer talk 101</h3>
-                <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F07%2FComputer-Science-Background.jpg&f=1&nofb=1" alt="Computer science image" width="100" height="100">
+                <h3 class="blogPost__heading--1">Computer talk 101</h3>
+                <img class="blogPost__img--1" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F07%2FComputer-Science-Background.jpg&f=1&nofb=1" alt="Computer science image" width="100" height="100">
                 <blockquote cite="https://rodprogramdev.wordpress.com/">
                     Computer literacy nowadays is an important skill to be acquired by any individual.
                     This is due to the fact that most common tasks for different jobs in any industries will
                     require tasks that can be achieved through the use of a computer. From sending a 
                     simple email to creating powerpoint presentations for a captured audience.
-                </blockquote>
+                </blockquote><br>
                 <a href="#">Continue Reading</a>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
                
             </article>
             <article>
-                <h3 class="blogPost__heading"><abbr title="Cisco Certified Network Associate">CCNA</abbr> - Internet of Things</h3>
-                <img class="blogPost__img--1" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.o89uhOOmpmrdsAiHYqKCIgHaEK%26pid%3DApi&f=1" alt="Networking rj45 cable image">
+                <h3 class="blogPost__heading--2"><abbr title="Cisco Certified Network Associate">CCNA</abbr> - Internet of Things</h3>
+                <img class="blogPost__img--2" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.o89uhOOmpmrdsAiHYqKCIgHaEK%26pid%3DApi&f=1" alt="Networking rj45 cable image">
                 <blockquote cite="https://www.rodprogramdev.wordpress.com">
                     Hi! I'm Rodrigo Lopez and I would like to take the <abbr title="Cisco Certified Network Associate">CCNA</abbr> certification that is why
                     I have committed to study networking on a daily basis for one hour. I will be applying
