@@ -152,7 +152,26 @@
 
         /*--------------------------TABLE STYLES-------------------------------------*/
         .table{
-            height: 100vh;
+            height: 80vh;
+            background-color: #fff;
+            padding-left:2.5rem;
+        }
+
+        .table__heading{
+            text-align: center;
+            padding: 2rem 2rem;
+        }
+
+        td,
+        th{
+            padding: 1.1rem .5rem;
+            font-size: .9rem;
+            margin:5px;
+            border: 1px solid #dddddd;
+        }
+
+        tr:nth-child(even){
+            background-color: #dddddd;
         }
 
        
@@ -251,7 +270,7 @@
     <!--****************************************TABLE SECTION**********************************-->
     <section>
         <div class="table">
-            <h2 class="table__heading">TABLE INFORMATION</h2>
+            <h2 class="table__heading">WORKSHOP SCHEDULES:</h2>
             <table>
                 <thead>
                     <tr>
